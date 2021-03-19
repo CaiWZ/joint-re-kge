@@ -1,0 +1,56 @@
+2021-03-09 20:07:25,059 - root - INFO - Flag Values:
+{
+    "L1_flag": true,
+    "batch_size": 1024,
+    "ckpt_path": "/home/cwz/program/joint-kg-recommender/log/",
+    "clipping_max_value": 5.0,
+    "data_path": "/home/cwz/program/joint-kg-recommender/datasets/",
+    "dataset": "dbbook2014",
+    "early_stopping_steps_to_wait": 2500,
+    "embedding_size": 100,
+    "eval_interval_steps": 500,
+    "eval_only_mode": false,
+    "experiment_name": "dbbook2014-transup-1615291644",
+    "filter_wrong_corrupted": true,
+    "has_visualization": true,
+    "is_report": false,
+    "joint_ratio": 0.5,
+    "kg_lambda": 1.0,
+    "kg_test_files": null,
+    "l2_lambda": 1e-05,
+    "learning_rate": 0.005,
+    "learning_rate_decay_when_no_progress": 0.5,
+    "load_ckpt_file": null,
+    "load_experiment_name": null,
+    "log_level": "debug",
+    "log_path": "/home/cwz/program/joint-kg-recommender/log/",
+    "margin": 1.0,
+    "max_queue": 10,
+    "model_type": "transup",
+    "momentum": 0.9,
+    "negtive_samples": 1,
+    "norm_lambda": 1.0,
+    "num_preferences": 13,
+    "num_processes": 4,
+    "optimizer_type": "Adagrad",
+    "rec_test_files": "valid.dat:test.dat",
+    "seed": 3,
+    "share_embeddings": false,
+    "topn": 10,
+    "training_steps": 50000,
+    "use_st_gumbel": false,
+    "visualization_port": 8097
+}
+2021-03-09 20:07:25,192 - root - INFO - Totally 48684 train ratings, 8322,8955 eval ratings in files: /home/cwz/program/joint-kg-recommender/datasets/dbbook2014/valid.dat;/home/cwz/program/joint-kg-recommender/datasets/dbbook2014/test.dat!
+2021-03-09 20:07:25,199 - root - INFO - successfully load 5576 users and 2680 items!
+2021-03-09 20:07:25,244 - root - INFO - Building model.
+2021-03-09 20:07:29,639 - root - INFO - Architecture: TransUPModel(
+  (user_embeddings): Embedding(5576, 100)
+  (item_embeddings): Embedding(2680, 100)
+  (pref_embeddings): Embedding(13, 100)
+  (pref_norm_embeddings): Embedding(13, 100)
+)
+2021-03-09 20:07:29,639 - root - INFO - Total params: 828200.0
+2021-03-09 20:07:29,640 - root - INFO - One epoch is 48 steps.
+2021-03-09 20:07:29,640 - root - INFO - Training.
+2021-03-09 20:07:29,641 - root - INFO - train loss:0.0000!
